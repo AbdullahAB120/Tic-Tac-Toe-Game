@@ -1,0 +1,110 @@
+.tic-tac-toe {
+	padding: 50px;
+	text-align: center;
+}
+
+
+.tic-tac-toe h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	font-size: 50px;
+	font-weight: 800;
+}
+
+.tic-tac-toe h1 img {
+	height: 50px;
+	width: 50px;
+	margin: 0 20px;
+}
+
+.tic-tac-toe h1 span {
+	color: #11ffb6;
+}
+
+
+.tic-tac-toe .board {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 50px 0;
+}
+
+.tic-tac-toe .board .box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	width: 200px;
+	background: #1f3540;
+	border: 5px solid #0f1b21;
+	border-radius: 15px;
+}
+
+
+.strike {
+	position: absolute;
+	width: 550px;
+	height: 8px;
+	background: #ffffff;
+	opacity: 0;
+	animation: strikeIn 0.6s ease-out forwards;
+}
+
+.strike.strike-col-1 {
+	top: 95px;
+}
+.strike.strike-col-2 {
+	top: 295px;
+}
+.strike.strike-col-3 {
+	top: 495px;
+}
+
+.strike.strike-row-1 {
+	left: -35px;
+	transform: rotate(90deg);
+}
+.strike.strike-row-2 {
+	left: 165px;
+	transform: rotate(90deg);
+}
+.strike.strike-row-3 {
+	left: 365px;
+	transform: rotate(90deg);
+}
+
+.strike.strike-diag-main {
+	top: 30px;
+	left: -195px;
+	width: 750px;
+	transform: rotate(45deg) translate(50%, 50%);
+}
+.strike.strike-diag-anti {
+	top: 30px;
+	right: -205px;
+	width: 750px;
+	transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+
+.tic-tac-toe button {
+	background: #1f3540;
+	color: #11ffb6;
+	border: 0;
+	border-radius: 15px;
+	padding: 25px 50px;
+	font-size: 25px;
+	font-weight: 500;
+	cursor: pointer;
+	outline: 0;
+}
+
+
+@keyframes strikeIn {
+	to {
+		opacity: 1;
+	}
+}

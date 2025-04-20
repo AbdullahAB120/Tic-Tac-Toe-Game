@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	background: #0f1b21;
+	color: #ffffff;
+	font-family: Arial;
+}
